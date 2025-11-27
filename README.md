@@ -13,7 +13,7 @@ For each frame, **YOLOv8** is applied to detect products in 2D space. By combini
 The GIF below demonstrates the pipeline running on a test video (`first_order` data).
 The green bounding boxes represent YOLOv8 detections, annotated with the calculated **Distance** and **Physical Size**.
 <div align="center">
-  <img src="assets/demo.gif" width="90%" />
+  <img src="asset/demo.gif" width="90%" />
   <br>
   <sub><i>Figure 1: Real-time 3D detection output (Class | Distance | Size)</i></sub>
 </div>
