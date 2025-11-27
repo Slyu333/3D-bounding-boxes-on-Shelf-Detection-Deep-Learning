@@ -8,7 +8,16 @@ The solution implements a pipeline that utilizes the **Intel RealSense SDK** to 
 
 For each frame, **YOLOv8** is applied to detect products in 2D space. By combining these detections with the corresponding depth data, the system calculates the real-world **spatial coordinates $(X, Y, Z)$** and estimates the **physical dimensions $(Width, Height)$** of the items.
 
+## 📊 Demo Result
 
+The GIF below demonstrates the pipeline running on a test video (`first_order` data).
+The green bounding boxes represent YOLOv8 detections, annotated with the calculated **Distance** and **Physical Size**.
+<div align="center">
+  <img src="assets/demo.gif" width="90%" />
+  <br>
+  <sub><i>Figure 1: Real-time 3D detection output (Class | Distance | Size)</i></sub>
+</div>
+<br>
 ## 🛠️ Project Structure & Usage
 
 The core logic is implemented in the Jupyter Notebook: `detection_task.ipynb`.
