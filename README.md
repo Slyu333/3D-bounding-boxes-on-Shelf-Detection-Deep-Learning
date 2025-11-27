@@ -4,7 +4,9 @@
 This is a **Deep Learning Programming Test** project. 
 In short, it is a detection task where the goal is to predict the **3D bounding boxes** of products on a shelf.
 
-This solution uses **YOLOv8** for 2D object detection and **Intel RealSense SDK** for depth extraction to calculate the real-world coordinates $(X, Y, Z)$ and physical dimensions $(Width, Height)$ of the items.
+The solution implements a pipeline that utilizes the **Intel RealSense SDK** to process video files frame-by-frame, ensuring proper alignment between RGB and Depth streams. 
+
+For each frame, **YOLOv8** is applied to detect products in 2D space. By combining these detections with the corresponding depth data, the system calculates the real-world **spatial coordinates $(X, Y, Z)$** and estimates the **physical dimensions $(Width, Height)$** of the items.
 
 
 ## 🛠️ Project Structure & Usage
